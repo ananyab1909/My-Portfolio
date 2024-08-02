@@ -75,11 +75,12 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block justify-end mr-20 lg:mr-20">
+        <div className="hidden lg:block fixed bottom-0 right-0 mr-20 mb-10">
           <Lottie 
            options={defaultOptions}
-           height={400} 
-           width={400}
+           height={700} 
+           width={700}
+            style={{ pointerEvents: 'none' }}
            />
         </div>
       </div>
