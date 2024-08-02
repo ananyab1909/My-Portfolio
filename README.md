@@ -5,7 +5,7 @@ This is my personal website made purely in javascript using React and Tailwind C
 
 ## Socials
 
-- __Ankit Dey(Me)__
+- __Ananya Biswas(Me)__
   
     - Portfolio : https://dub.sh/ananyabiswas/
     - Twitter : https://twitter.com/not_average_x/
