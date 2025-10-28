@@ -29,21 +29,22 @@ const Skills = () => {
   };
   
   return (
-    <div className="flex flex-wrap justify-center">
-      <div className="lg:w-1/2 xl:w-1/2 md:w-full sm:w-full"></div>
-        <div className="container mx-auto p-4 lg:ml-40 lg:mt-20 overflow-x-hidden lg:w-1/2 ">
-          <h1 className="text-left font-semibold text-3xl font-serif text-white mb-10 md:mr-30 lg:w-1/2 lg:text-left">My Tech Stack</h1>
-          <div className="flex flex-wrap flex-col justify-center ">
-            <div className="skill-group flex flex-row items-center mb-4 ">
+    <div className="flex flex-row w-full min-h-screen">
+      {/* Left Column: Skills Content */}
+      <div className="flex-1 flex items-center justify-center p-8">
+        <div className="w-full flex flex-col items-center justify-center -mt-40 -ml-10">
+          <h1 className="text-left font-semibold text-3xl font-serif text-white mb-10">My Tech Stack</h1>
+          <div className="flex flex-col justify-center">
+            <div className="skill-group flex flex-row items-center mb-4">
               <h2 className="text-left font-light text-xl font-serif text-white mr-8">DevOps</h2>
               <div className="flex flex-row justify-center items-center">
-                <img src={DockerLogo} alt="Docker" className="w- h-10 mr-2" />
+                <img src={DockerLogo} alt="Docker" className="w-10 h-10 mr-2" />
                 <img src={KubLogo} alt="Kubernetes" className="w-10 h-10 mr-2" />
                 <img src={SelLogo} alt="Selenium" className="w-10 h-10 mr-2" />
                 <img src={BashLogo} alt="Bash" className="w-10 h-10 mr-2" />
               </div>
             </div>
-            <div className="skill-group flex flex-row items-center mb-4 lg:w-1/2">
+            <div className="skill-group flex flex-row items-center mb-4">
               <h2 className="text-left font-light text-xl font-serif text-white mr-8">Web Dev</h2>
               <div className="flex flex-row justify-center items-center">
                 <img src={HTMLLogo} alt="HTML" className="w-10 h-10 mr-2" />
@@ -54,7 +55,7 @@ const Skills = () => {
                 <img src={SQLLogo} alt="MySQL" className="w-10 h-10 mr-2" />
               </div>
             </div>
-            <div className="skill-group flex flex-row items-center mb-4 lg:w-1/2">
+            <div className="skill-group flex flex-row items-center mb-4">
               <h2 className="text-left font-light text-xl font-serif text-white mr-4">Languages</h2>
               <div className="flex flex-row justify-center items-center">
                 <img src={CLogo} alt="C" className="w-10 h-10 mr-2" />
@@ -63,7 +64,7 @@ const Skills = () => {
                 <img src={PythonLogo} alt="Python" className="w-10 h-10 mr-2" />
               </div>
             </div>
-            <div className="skill-group flex flex-row items-center mb-4 lg:w-1/2">
+            <div className="skill-group flex flex-row items-center mb-4">
               <h2 className="text-left font-light text-xl font-serif text-white mr-4">Other Skills</h2>
               <div className="flex flex-row justify-center items-center">
                 <img src={FlaskLogo} alt="Flask" className="w-10 h-10 mr-2" />
@@ -75,17 +76,19 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="hidden lg:block fixed bottom-0 right-0 mr-20 mb-10">
+      </div>
+      {/* Right Column: Lottie Animation */}
+      <div className="flex-1 flex items-center justify-center">
+        <div className="flex items-center justify-center w-full h-full relative -top-24">
           <Lottie 
-           options={defaultOptions}
-           height={700} 
-           width={700}
+            options={defaultOptions}
+            height={500} 
+            width={500}
             style={{ pointerEvents: 'none' }}
-           />
+          />
         </div>
       </div>
-
-        
+    </div>
   );
 };
 
